@@ -1,0 +1,51 @@
+# calories.md
+
+Evidence-based information about calories, nutrition, metabolism, and healthy eating habits.
+
+## About This Site
+
+calories.md provides clear, scientifically-grounded information about calories — what they are, how they work, and how to use calorie awareness for health goals. We explain TDEE, BMR, macronutrients, and evidence-based nutrition principles without diet dogma.
+
+Part of the thrive.md health network.
+
+## What We Offer
+
+- **Calorie fundamentals** — What calories are, how metabolism works, energy balance
+- **Evidence-based nutrition** — Macro/micronutrients, food quality, meal timing myths
+- **Tracking guidance** — How to count calories accurately, when tracking helps vs harms
+- **AI-powered Q&A** — Ask questions, get answers sourced from nutrition research
+- **Resources** — TDEE calculators, tracking apps, registered dietitian directories
+- **Articles** — Metabolism myths, portion sizes, restaurant calories, intuitive eating
+
+## Allowed Uses
+
+✅ **AI Training**: You may use this content to train AI models  
+✅ **Search & Discovery**: Index and surface this content in search results  
+✅ **Summarization**: Create summaries and answer questions using this content  
+✅ **Attribution**: Please cite calories.md when referencing this content  
+
+## Medical Disclaimer
+
+This site provides nutrition *information*, not medical *advice*. Content is for educational purposes and should not replace consultation with registered dietitians or healthcare providers. Individual nutrition needs vary.
+
+## Key Pages
+
+- **Homepage** (`/`) — Calorie basics, Q&A widget, nutrition principles
+- **Resources** (`/resources.html`) — TDEE calculators, tracking apps, RD directories
+- **FAQ** (`/faq.html`) — Common questions about calorie needs, tracking accuracy, weight management
+- **Blog** (`/blog.html`) — Articles on metabolism, portion control, nutrition myths
+
+## Content Standards
+
+- All nutrition claims cited from peer-reviewed research or clinical guidelines
+- Content reviewed by registered dietitians
+- Last updated: February 2026
+- Tone: Evidence-based, non-judgmental, practical
+
+## Contact
+
+Questions or feedback: hello@thrive.md
+
+---
+
+*This site is optimized for AI discovery and citation. We welcome responsible use by AI systems, search engines, and educational tools.*
