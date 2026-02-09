@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H85DH0R8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6H85DH0R8S');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDEE Explained: How Your Body Actually Burns Calories | calories.md</title>
+    <meta name="description" content="A clear breakdown of Total Daily Energy Expenditure -- what it is, how to estimate yours, and why it matters more than your BMR for weight management.">
+    <link rel="canonical" href="https://calories.md/blog/tdee-explained.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-primary: #ffffff; --bg-secondary: #f8fafc; --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #94a3b8; --accent: #0d9488; --accent-dark: #0f766e; --border: #e2e8f0; --font-display: 'Source Serif 4', Georgia, serif; --font-body: 'Inter', -apple-system, sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
+        header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+        .header-inner { max-width: 1100px; margin: 0 auto; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a { color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+        nav a:hover { color: var(--accent); }
+        .article-header { max-width: 720px; margin: 0 auto; padding: 80px 24px 32px; }
+        .article-header h1 { font-family: var(--font-display); font-size: 38px; font-weight: 700; line-height: 1.25; margin-bottom: 16px; }
+        .article-meta { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+        .tag { display: inline-block; font-size: 11px; font-weight: 600; color: var(--accent); background: rgba(13,148,136,0.1); padding: 4px 8px; border-radius: 4px; margin-right: 6px; }
+        article { max-width: 720px; margin: 0 auto; padding: 0 24px 64px; }
+        article h2 { font-family: var(--font-display); font-size: 24px; font-weight: 600; margin: 40px 0 16px; }
+        article h3 { font-family: var(--font-display); font-size: 20px; font-weight: 600; margin: 32px 0 12px; }
+        article p { font-size: 17px; color: var(--text-secondary); margin-bottom: 20px; }
+        article ul, article ol { margin: 0 0 20px 24px; color: var(--text-secondary); }
+        article li { font-size: 16px; margin-bottom: 8px; line-height: 1.6; }
+        article blockquote { border-left: 3px solid var(--accent); padding: 12px 20px; margin: 24px 0; background: var(--bg-secondary); border-radius: 0 8px 8px 0; }
+        article blockquote p { font-size: 15px; color: var(--text-secondary); margin: 0; }
+        .source-note { font-size: 13px; color: var(--text-muted); font-style: italic; }
+        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; margin-top: 64px; }
+        .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+        .footer-brand .logo { display: inline-block; margin-bottom: 12px; }
+        .footer-brand p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+        .footer-links h4 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+        .footer-links a { display: block; color: var(--text-muted); text-decoration: none; font-size: 14px; margin-bottom: 8px; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--accent); }
+        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 13px; color: var(--text-muted); }
+        @media (max-width: 768px) { nav { display: none; } .article-header h1 { font-size: 28px; } .footer-inner { grid-template-columns: 1fr; gap: 24px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">calories<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/resources.html">Resources</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/blog.html">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="article-header">
+        <div class="article-meta">February 7, 2026 &middot; 9 min read</div>
+        <h1>TDEE Explained: How Your Body Actually Burns Calories</h1>
+        <span class="tag">Metabolism</span>
+        <span class="tag">Science</span>
+    </div>
+
+    <article>
+        <p>If you've spent any time reading about weight management, you've probably seen the acronym TDEE -- Total Daily Energy Expenditure. It's the total number of calories your body burns in a 24-hour period, and understanding it is more useful than almost any diet hack you'll find online.</p>
+
+        <p>Most dietary advice focuses on what to eat. TDEE focuses on how much energy your body actually uses, which turns out to be the variable that matters most for body composition changes.</p>
+
+        <h2>The four components of TDEE</h2>
+
+        <p>Your body burns calories through four distinct mechanisms. Each contributes a different proportion of your total expenditure, and understanding the breakdown explains why some weight-loss strategies work better than others.</p>
+
+        <h3>1. Basal Metabolic Rate (BMR) -- 60-70% of TDEE</h3>
+
+        <p>This is the energy your body needs to keep you alive while doing absolutely nothing. Breathing, circulating blood, maintaining body temperature, repairing cells -- all of this burns calories even while you sleep. BMR is determined primarily by lean body mass, which is why two people of the same weight can have significantly different caloric needs if one carries more muscle.</p>
+
+        <p>The Harris-Benedict equation, published in 1919 and revised by Roza and Shizgal in 1984, remains one of the most widely used formulas for estimating BMR. The Mifflin-St Jeor equation, published in 1990, is generally considered more accurate for modern populations. For men: (10 x weight in kg) + (6.25 x height in cm) - (5 x age) + 5. For women: the same formula minus 161 instead of plus 5.</p>
+
+        <h3>2. Thermic Effect of Food (TEF) -- 8-15% of TDEE</h3>
+
+        <p>Digesting food requires energy. When you eat a 500-calorie meal, your body doesn't pocket all 500 calories. Some fraction goes toward breaking down, absorbing, and storing those nutrients. The thermic effect varies by macronutrient: protein costs 20-30% of its energy to process, carbohydrates cost 5-10%, and fat costs 0-3%.</p>
+
+        <p>This is one reason high-protein diets tend to produce slightly better weight-loss results than isocaloric alternatives. If you eat 2,000 calories with 30% from protein versus 15% from protein, the higher-protein version costs your body roughly 60-90 extra calories in processing alone. Over weeks and months, that adds up.</p>
+
+        <h3>3. Exercise Activity Thermogenesis (EAT) -- 5-10% of TDEE</h3>
+
+        <p>This is the energy burned during deliberate exercise -- running, lifting weights, cycling, swimming. For most people, it's a surprisingly small fraction of total expenditure. A 45-minute jog might burn 300-400 calories. That matters, but it's dwarfed by your BMR.</p>
+
+        <p>This is the component people tend to overestimate. Gym-goers routinely assume they've burned 600-800 calories in a workout when the actual figure is half that. Wearable fitness trackers don't help -- a 2017 Stanford study found that popular wrist devices overestimated calorie expenditure by 27-93%.</p>
+
+        <h3>4. Non-Exercise Activity Thermogenesis (NEAT) -- 15-50% of TDEE</h3>
+
+        <p>NEAT is the wild card. It includes every physical movement that isn't deliberate exercise: walking to the kitchen, fidgeting, standing, gesticulating while talking, carrying groceries, taking the stairs. In sedentary office workers, NEAT might account for 15% of daily expenditure. In active people with physically demanding jobs, it can exceed 50%.</p>
+
+        <p>James Levine at the Mayo Clinic has spent decades studying NEAT and published landmark findings showing that NEAT varies by up to 2,000 calories per day between individuals of similar size. His research, published in <em>Science</em> in 1999, found that people who resist fat gain during overfeeding do so primarily by unconsciously increasing NEAT -- moving more, fidgeting more, sitting less.</p>
+
+        <p>This has practical implications. When you cut calories, your body often reduces NEAT without your awareness. You move less, stand less, fidget less. This unconscious reduction in activity can erase a significant portion of your planned calorie deficit.</p>
+
+        <h2>How to estimate your TDEE</h2>
+
+        <p>The standard approach multiplies your BMR by an activity factor:</p>
+
+        <ul>
+            <li>Sedentary (desk job, minimal exercise): BMR x 1.2</li>
+            <li>Lightly active (exercise 1-3 days/week): BMR x 1.375</li>
+            <li>Moderately active (exercise 3-5 days/week): BMR x 1.55</li>
+            <li>Very active (hard exercise 6-7 days/week): BMR x 1.725</li>
+            <li>Extremely active (physical job + training): BMR x 1.9</li>
+        </ul>
+
+        <p>These multipliers come from research on doubly labeled water, the gold standard for measuring energy expenditure in free-living conditions. They're reasonable starting points, but most people overestimate their activity level. If you work at a desk and exercise three times a week for 45 minutes, you're probably "lightly active," not "moderately active."</p>
+
+        <h2>A better approach: track and adjust</h2>
+
+        <p>Formulas give you a starting estimate. Real data gives you something more useful. The most reliable way to find your actual TDEE is to track your calorie intake and body weight simultaneously over 2-4 weeks.</p>
+
+        <p>If your weight is stable, your average daily intake is approximately your TDEE. If you're losing about half a pound per week, you're in a deficit of roughly 250 calories per day, so your TDEE is about 250 above your average intake. This empirical approach accounts for individual variation that no formula can capture -- your specific NEAT levels, your food's actual calorie content, your gut microbiome's efficiency.</p>
+
+        <h2>Why TDEE matters more than BMR</h2>
+
+        <p>BMR gets most of the attention, but TDEE is what actually determines whether you gain, lose, or maintain weight. Two people with identical BMRs can have TDEEs that differ by 500-1,000 calories because of differences in activity level and NEAT.</p>
+
+        <p>This also explains why "eating below your BMR" isn't inherently dangerous in the way internet forums suggest. Your BMR might be 1,500 calories, but your TDEE is 2,200. Eating 1,800 calories puts you below your BMR but only 400 calories below your actual expenditure -- a modest, sustainable deficit.</p>
+
+        <h2>What changes your TDEE over time</h2>
+
+        <p>Your TDEE is not fixed. It changes with age (declining roughly 1-2% per decade after 20, per a 2021 study in <em>Science</em> by Pontzer et al.), body composition (more muscle means higher BMR), activity patterns, and caloric intake itself. Prolonged dieting reduces TDEE through adaptive thermogenesis and reduced NEAT. Resistance training can partially offset this by preserving or increasing lean mass.</p>
+
+        <p>Hormonal factors also play a role. Thyroid function, cortisol levels, and sex hormones all influence metabolic rate. These effects are real but typically account for 5-10% variation, not the 50% swings some popular media suggests.</p>
+
+        <h2>Practical takeaways</h2>
+
+        <p>Start with a formula-based TDEE estimate, then refine it with real-world data over two to four weeks. Don't rely on exercise trackers for calorie burn estimates. Pay attention to NEAT -- small movement habits throughout the day add up to more than most gym sessions. And remember that your TDEE will change as your body changes, so reassess periodically rather than locking in a number and never revisiting it.</p>
+
+        <p class="source-note">Sources: Mifflin-St Jeor (1990), Levine et al. Science (1999), Stanford wearable study (2017), Pontzer et al. Science (2021), Roza & Shizgal (1984).</p>
+    </article>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="/" class="logo">calories<span>.md</span></a>
+                <p>Part of the <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a> health network.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="/resources.html">Resource Library</a>
+                <a href="/faq.html">Common Questions</a>
+                <a href="/blog.html">Articles</a>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="https://thrive.md/editorial-policy.html">Editorial Policy</a>
+                <a href="https://thrive.md/medical-review.html">Medical Review</a>
+                <a href="mailto:hello@thrive.md">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Network</h4>
+                <a href="https://thrive.md">thrive.md</a>
+                <a href="https://anxiety.md">anxiety.md</a>
+                <a href="https://adhd.md">adhd.md</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 calories.md</p>
+            <p>Medical information, not medical advice</p>
+        </div>
+    </footer>
+</body>
+</html>
