@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H85DH0R8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6H85DH0R8S');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Calculate Your TDEE: Understanding Total Daily Energy Expenditure — calories.md</title>
+    <meta name="description" content="TDEE determines how many calories you burn daily. Understanding it is the foundation of any weight management strategy — whether losing, gaining, or maintaining.">
+    <meta name="author" content="thrive.md Editorial Team">
+    <link rel="canonical" href="https://calories.md/blog/how-to-calculate-tdee/">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://calories.md/blog/how-to-calculate-tdee/">
+    <meta property="og:title" content="How to Calculate Your TDEE: Understanding Total Daily Energy Expenditure — calories.md">
+    <meta property="og:description" content="TDEE determines how many calories you burn daily. Understanding it is the foundation of any weight management strategy — whether losing, gaining, or maintaining.">
+    <meta property="og:site_name" content="calories.md">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Calculate Your TDEE: Understanding Total Daily Energy Expenditure — calories.md">
+    <meta name="twitter:description" content="TDEE determines how many calories you burn daily. Understanding it is the foundation of any weight management strategy — whether losing, gaining, or maintaining.">
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-topic" content="TDEE, calories, BMR, weight management, metabolism">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["Article", "MedicalWebPage"],
+          "@id": "https://calories.md/blog/how-to-calculate-tdee/#article",
+          "headline": "How to Calculate Your TDEE: Understanding Total Daily Energy Expenditure",
+          "description": "TDEE determines how many calories you burn daily. Understanding it is the foundation of any weight management strategy — whether losing, gaining, or maintaining.",
+          "url": "https://calories.md/blog/how-to-calculate-tdee/",
+          "datePublished": "2026-02-14",
+          "dateModified": "2026-02-14",
+          "author": {"@type": "Organization", "name": "thrive.md Editorial Team", "url": "https://thrive.md"},
+          "publisher": {"@type": "Organization", "name": "calories.md", "url": "https://calories.md"},
+          "isPartOf": {"@id": "https://calories.md/#website"},
+          "mainEntityOfPage": {"@id": "https://calories.md/blog/how-to-calculate-tdee/#article"},
+          "wordCount": "876",
+          "lastReviewed": "2026-02-14",
+          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+        },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Why do online TDEE calculators give different numbers?", "acceptedAnswer": {"@type": "Answer", "text": "Different calculators use different formulas (Mifflin-St Jeor, Harris-Benedict, Katch-McArdle) and interpret activity levels differently. Treat any calculator result as a starting estimate, then adjust based on real-world weight changes over 2-3 weeks. The calculators get you in the ballpark; tracking gets you to accuracy."}}, {"@type": "Question", "name": "Does metabolism really slow with age?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but less than commonly believed. BMR decreases roughly 1-2% per decade after 20, primarily due to loss of muscle mass rather than inherent metabolic slowdown. A 2021 study in Science found metabolism is remarkably stable between ages 20-60 when adjusted for body composition. Maintaining muscle through resistance training is the best defense."}}, {"@type": "Question", "name": "Should I eat my BMR or my TDEE?", "acceptedAnswer": {"@type": "Answer", "text": "Never eat below your BMR for extended periods \u2014 your body needs those calories for basic function. Your calorie target for weight loss should be between your BMR and TDEE. For most people, TDEE minus 500 calories keeps you safely above BMR while creating a sustainable deficit."}}]}
+      ]
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: #fafaf9; color: var(--text-primary); line-height: 1.7; font-size: 16px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { color: var(--accent-dark); text-decoration: underline; }
+
+        /* Header */
+        .site-header { border-bottom: 1px solid var(--border); padding: 1rem 0; background: #fff; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; }
+        .site-logo { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--accent); }
+        .site-nav a { margin-left: 1.5rem; color: var(--text-secondary); font-size: 0.9rem; }
+
+        .container { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+        .container-wide { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Article */
+        .article-header { padding: 3rem 0 2rem; }
+        .article-header h1 { font-family: var(--font-display); font-size: 2.25rem; line-height: 1.25; font-weight: 700; margin-bottom: 1rem; }
+        .article-meta { color: var(--text-muted); font-size: 0.875rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .article-meta time, .article-meta .reading-time { display: flex; align-items: center; gap: 0.35rem; }
+
+        /* TOC */
+        .toc { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+        .toc-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-primary); }
+        .toc ol { padding-left: 1.25rem; }
+        .toc li { margin-bottom: 0.35rem; font-size: 0.9rem; }
+        .toc a { color: var(--text-secondary); }
+
+        /* Content */
+        .article-body { padding-bottom: 2rem; }
+        .article-body h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+        .article-body h3 { font-size: 1.2rem; font-weight: 600; margin: 1.5rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.25rem; }
+        .article-body ul, .article-body ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .article-body li { margin-bottom: 0.5rem; }
+        .article-body blockquote { border-left: 3px solid var(--accent); padding: 0.75rem 1rem; background: var(--bg-secondary); margin-bottom: 1.25rem; font-style: italic; color: var(--text-secondary); }
+        .article-body .source-cite { font-size: 0.8rem; color: var(--text-muted); }
+        .article-body .source-cite a { color: var(--accent); }
+
+        /* FAQ */
+        .faq-section { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin: 2rem 0; }
+        .faq-section h2 { border: none; margin-top: 0; padding-top: 0; }
+        .faq-item { margin-bottom: 1.5rem; }
+        .faq-item:last-child { margin-bottom: 0; }
+        .faq-item h3 { font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--accent-dark); }
+        .faq-item p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        /* Share */
+        .share-bar { display: flex; gap: 0.75rem; margin: 2rem 0; padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); align-items: center; }
+        .share-bar span { font-size: 0.875rem; color: var(--text-muted); }
+        .share-btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; font-weight: 500; border: 1px solid var(--border); color: var(--text-secondary); background: #fff; cursor: pointer; transition: all 0.2s; }
+        .share-btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Related */
+        .related-posts { margin: 2rem 0; }
+        .related-posts h2 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 1rem; border: none; padding: 0; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .related-card { border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; background: #fff; transition: border-color 0.2s; }
+        .related-card:hover { border-color: var(--accent); }
+        .related-card h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+        .related-card p { font-size: 0.8rem; color: var(--text-muted); }
+
+        /* Cross-links */
+        .cross-links { margin: 2rem 0; padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; }
+        .cross-links h3 { font-size: 0.95rem; margin-bottom: 0.75rem; color: var(--text-secondary); }
+        .cross-links-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .cross-links-list a { padding: 0.35rem 0.75rem; border: 1px solid var(--border); border-radius: 20px; font-size: 0.8rem; color: var(--text-secondary); background: #fff; }
+        .cross-links-list a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Disclaimer */
+        .disclaimer { margin: 2rem 0; padding: 1.25rem; background: #fefce8; border: 1px solid #fde68a; border-radius: 8px; font-size: 0.8rem; color: #92400e; line-height: 1.6; }
+
+        /* Footer */
+        .site-footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 2rem; text-align: center; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+        .footer-links a { font-size: 0.8rem; color: var(--text-muted); }
+        .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+
+        @media (max-width: 640px) {
+            .article-header h1 { font-size: 1.75rem; }
+            .related-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container-wide">
+            <a href="https://calories.md/" class="site-logo">calories.md</a>
+            <nav class="site-nav">
+                <a href="https://calories.md/">Home</a>
+                <a href="https://calories.md/blog/">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="container">
+            <header class="article-header">
+                <h1>How to Calculate Your TDEE: Understanding Total Daily Energy Expenditure</h1>
+                <div class="article-meta">
+                    <time datetime="2026-02-14">February 14, 2026</time>
+                    <span class="reading-time">4 min read</span>
+                    <span>By thrive.md Editorial Team</span>
+                </div>
+            </header>
+
+            <nav class="toc"><div class="toc-title">Table of Contents</div><ol><li><a href="#the-components-of-tdee">The Components of TDEE</a></li><li><a href="#how-to-estimate-your-bmr">How to Estimate Your BMR</a></li><li><a href="#from-bmr-to-tdee-activity-multipliers">From BMR to TDEE: Activity Multipliers</a></li><li><a href="#the-real-world-method-track-and-adjust">The Real-World Method: Track and Adjust</a></li><li><a href="#applying-your-tdee">Applying Your TDEE</a></li><li><a href="#common-tdee-mistakes">Common TDEE Mistakes</a></li></ol></nav>
+
+            <div class="article-body">
+                <p>Whether your goal is weight loss, muscle gain, or simply understanding your body's energy needs, it all starts with one number: your Total Daily Energy Expenditure (TDEE). TDEE represents the total number of calories your body burns in a day, accounting for everything from basic organ function to exercise. Eat more than your TDEE consistently, and you gain weight. Eat less, and you lose weight. It's thermodynamics, not opinion.</p>
+
+<h2 id="the-components-of-tdee">The Components of TDEE</h2>
+<p>Your daily calorie burn is composed of four components:</p>
+<ul>
+<li><strong>Basal Metabolic Rate (BMR): 60-70% of TDEE</strong> — The calories your body burns at complete rest to maintain vital functions: breathing, circulation, cell production, brain function, temperature regulation. This is by far the largest component and is primarily determined by your lean body mass, age, and sex.</li>
+<li><strong>Thermic Effect of Food (TEF): 8-15% of TDEE</strong> — The energy cost of digesting, absorbing, and processing food. Protein has the highest TEF (~20-30% of protein calories are burned during digestion), followed by carbs (~5-10%), then fat (~0-3%). This is one reason high-protein diets support weight management.</li>
+<li><strong>Exercise Activity Thermogenesis (EAT): 5-10% of TDEE</strong> — Planned exercise. This is actually a smaller component than most people think.</li>
+<li><strong>Non-Exercise Activity Thermogenesis (NEAT): 15-30% of TDEE</strong> — All movement that isn't planned exercise: walking, fidgeting, standing, cooking, gardening. NEAT varies enormously between individuals and is a major reason some people seem to "eat anything and not gain weight." Desk workers can burn 500-1,000 fewer NEAT calories than active occupations.</li>
+</ul>
+
+<h2 id="how-to-estimate-your-bmr">How to Estimate Your BMR</h2>
+<p>The Mifflin-St Jeor equation is considered the most accurate estimation formula for most adults:</p>
+<ul>
+<li><strong>Men:</strong> BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age) + 5</li>
+<li><strong>Women:</strong> BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age) - 161</li>
+</ul>
+<p>Example: A 35-year-old man, 180 lbs (82 kg), 5'10" (178 cm):<br>
+BMR = (10 × 82) + (6.25 × 178) - (5 × 35) + 5 = 820 + 1,113 - 175 + 5 = <strong>1,763 calories/day</strong></p>
+
+<h2 id="from-bmr-to-tdee-activity-multipliers">From BMR to TDEE: Activity Multipliers</h2>
+<p>Multiply your BMR by an activity factor to estimate TDEE:</p>
+<ul>
+<li><strong>Sedentary (desk job, little exercise):</strong> BMR × 1.2</li>
+<li><strong>Lightly active (light exercise 1-3 days/week):</strong> BMR × 1.375</li>
+<li><strong>Moderately active (moderate exercise 3-5 days/week):</strong> BMR × 1.55</li>
+<li><strong>Very active (hard exercise 6-7 days/week):</strong> BMR × 1.725</li>
+<li><strong>Extremely active (athlete, physical job + training):</strong> BMR × 1.9</li>
+</ul>
+<p>Using our example at "moderately active": 1,763 × 1.55 = <strong>~2,733 calories/day TDEE</strong></p>
+<p>Important caveat: most people overestimate their activity level. If you work a desk job and exercise 3 times a week, "lightly active" (1.375) is probably more accurate than "moderately active." When in doubt, round down.</p>
+
+<h2 id="the-real-world-method-track-and-adjust">The Real-World Method: Track and Adjust</h2>
+<p>Formulas are estimates. Your actual TDEE is best determined empirically:</p>
+<ul>
+<li><strong>Step 1:</strong> Track your food intake accurately for 2-3 weeks using a food scale and an app like MyFitnessPal or Cronometer. "Eyeballing" portions is unreliable — studies show people underestimate intake by 30-50%.</li>
+<li><strong>Step 2:</strong> Weigh yourself daily, same conditions (morning, after bathroom, before eating). Use the weekly average — daily weight fluctuates 2-4 lbs from water, sodium, and food volume.</li>
+<li><strong>Step 3:</strong> If your weight is stable over 2-3 weeks, your average calorie intake IS your TDEE. If you're gaining or losing, adjust: ~3,500 calories = 1 pound (roughly).</li>
+</ul>
+<p>This method accounts for your individual metabolism, NEAT, and actual activity — far more accurate than any calculator. It takes patience but gives you a real number instead of an estimate.</p>
+
+<h2 id="applying-your-tdee">Applying Your TDEE</h2>
+<p>Once you know your TDEE:</p>
+<ul>
+<li><strong>For weight loss:</strong> Create a deficit of 300-500 calories/day (0.5-1 lb/week loss). Larger deficits are hard to sustain and increase muscle loss. A 500-calorie deficit is the standard starting point.</li>
+<li><strong>For weight gain:</strong> Eat 250-500 calories above TDEE combined with resistance training to maximize muscle gain and minimize fat gain.</li>
+<li><strong>For maintenance:</strong> Eat at TDEE. Periodic diet breaks at maintenance calories during weight loss phases help manage metabolic adaptation and psychological fatigue.</li>
+</ul>
+<p>Key insight: your TDEE isn't fixed. It changes as your weight changes, as activity changes, and through metabolic adaptation. During prolonged dieting, TDEE can decrease by 10-15% beyond what weight loss alone would predict (adaptive thermogenesis). This is why weight loss plateaus happen and why periodic reassessment matters.</p>
+
+<h2 id="common-tdee-mistakes">Common TDEE Mistakes</h2>
+<ul>
+<li><strong>Eating back exercise calories:</strong> Fitness trackers overestimate calorie burn by 30-90%. If you eat back every "burned" calorie, you'll likely eat at maintenance or surplus.</li>
+<li><strong>Ignoring liquid calories:</strong> Coffee drinks, alcohol, juice, soda. They count. A daily Starbucks frappuccino is 300-500 calories — roughly a pound of body weight every 10 days.</li>
+<li><strong>Weekend amnesia:</strong> Eating in a deficit Monday-Friday but going unrestricted on weekends can easily erase 5 days of deficit. Consistency across 7 days matters.</li>
+<li><strong>Underestimating portions:</strong> A tablespoon of peanut butter is 90 calories. Most people use 2-3 tablespoons and call it one. A food scale removes guessing.</li>
+</ul>
+<p>Understanding TDEE isn't about obsessive calorie counting forever — it's about building awareness of energy balance so you can make informed decisions about food and activity. Most people who successfully manage their weight long-term develop an intuitive sense of portions and energy balance, but that intuition is built on a foundation of actually knowing the numbers first.</p>
+            </div>
+
+            <div class="faq-section"><h2>Frequently Asked Questions</h2><div class="faq-item"><h3>Why do online TDEE calculators give different numbers?</h3><p>Different calculators use different formulas (Mifflin-St Jeor, Harris-Benedict, Katch-McArdle) and interpret activity levels differently. Treat any calculator result as a starting estimate, then adjust based on real-world weight changes over 2-3 weeks. The calculators get you in the ballpark; tracking gets you to accuracy.</p></div><div class="faq-item"><h3>Does metabolism really slow with age?</h3><p>Yes, but less than commonly believed. BMR decreases roughly 1-2% per decade after 20, primarily due to loss of muscle mass rather than inherent metabolic slowdown. A 2021 study in Science found metabolism is remarkably stable between ages 20-60 when adjusted for body composition. Maintaining muscle through resistance training is the best defense.</p></div><div class="faq-item"><h3>Should I eat my BMR or my TDEE?</h3><p>Never eat below your BMR for extended periods — your body needs those calories for basic function. Your calorie target for weight loss should be between your BMR and TDEE. For most people, TDEE minus 500 calories keeps you safely above BMR while creating a sustainable deficit.</p></div></div>
+
+            <div class="share-bar">
+                <span>Share:</span>
+                <a class="share-btn" href="https://twitter.com/intent/tweet?text=How%20to%20Calculate%20Your%20TDEE%3A%20Understanding%20Total%20Daily%20Energy%20Expenditure&url=https://calories.md/blog/how-to-calculate-tdee/" target="_blank" rel="noopener">𝕏 Twitter</a>
+                <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://calories.md/blog/how-to-calculate-tdee/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+
+            
+
+            <div class="cross-links">
+                <h3>Explore Related Health Topics</h3>
+                <div class="cross-links-list">
+                    <a href="https://supplements.md/">supplements.md</a><a href="https://thrive.md/">thrive.md</a><a href="https://glp1.md/">glp1.md</a>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with questions about a medical condition. Never disregard professional medical advice or delay seeking it because of something you read on this site. If you are in crisis, call 988 (Suicide &amp; Crisis Lifeline) or go to your nearest emergency room.
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container-wide">
+            <div class="footer-links">
+                <a href="https://thrive.md">thrive.md</a>
+                <a href="https://anxiety.md">anxiety.md</a>
+                <a href="https://depression.md">depression.md</a>
+                <a href="https://ptsd.md">ptsd.md</a>
+                <a href="https://bipolar.md">bipolar.md</a>
+                <a href="https://ocd.md">ocd.md</a>
+                <a href="https://insomnia.md">insomnia.md</a>
+                <a href="https://ozempic.md">ozempic.md</a>
+                <a href="https://hypertension.md">hypertension.md</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 calories.md — Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
+        </div>
+    </footer>
+
+    <script>
+    // GA4 engagement tracking
+    let scrollMax = 0;
+    window.addEventListener('scroll', function() {
+        const pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        if (pct > scrollMax) {
+            scrollMax = pct;
+            if ([25, 50, 75, 100].includes(pct)) {
+                gtag('event', 'scroll_depth', { percent: pct, page: location.pathname });
+            }
+        }
+    });
+    // Time on page
+    const startTime = Date.now();
+    window.addEventListener('beforeunload', function() {
+        const seconds = Math.round((Date.now() - startTime) / 1000);
+        gtag('event', 'time_on_page', { seconds: seconds, page: location.pathname });
+    });
+    </script>
+</body>
+</html>
