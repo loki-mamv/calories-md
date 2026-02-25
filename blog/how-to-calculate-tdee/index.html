@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://calories.md/blog/how-to-calculate-tdee/#article"},
           "wordCount": "876",
           "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Why do online TDEE calculators give different numbers?", "acceptedAnswer": {"@type": "Answer", "text": "Different calculators use different formulas (Mifflin-St Jeor, Harris-Benedict, Katch-McArdle) and interpret activity levels differently. Treat any calculator result as a starting estimate, then adjust based on real-world weight changes over 2-3 weeks. The calculators get you in the ballpark; tracking gets you to accuracy."}}, {"@type": "Question", "name": "Does metabolism really slow with age?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but less than commonly believed. BMR decreases roughly 1-2% per decade after 20, primarily due to loss of muscle mass rather than inherent metabolic slowdown. A 2021 study in Science found metabolism is remarkably stable between ages 20-60 when adjusted for body composition. Maintaining muscle through resistance training is the best defense."}}, {"@type": "Question", "name": "Should I eat my BMR or my TDEE?", "acceptedAnswer": {"@type": "Answer", "text": "Never eat below your BMR for extended periods \u2014 your body needs those calories for basic function. Your calorie target for weight loss should be between your BMR and TDEE. For most people, TDEE minus 500 calories keeps you safely above BMR while creating a sustainable deficit."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -257,6 +262,7 @@ BMR = (10 × 82) + (6.25 × 178) - (5 × 35) + 5 = 820 + 1,113 - 175 + 5 = <stro
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

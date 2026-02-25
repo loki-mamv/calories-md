@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://calories.md/blog/protein-intake-guide/#article"},
           "wordCount": "778",
           "lastReviewed": "2026-02-18",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Is 100g of protein a day enough?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your body weight and goals. For a 130-pound person maintaining weight, 100g (0.77g/lb) is adequate. For a 200-pound person trying to build muscle, it's insufficient \u2014 they'd need 140-200g. Use the 0.7-1.0g per pound range based on your specific situation."}}, {"@type": "Question", "name": "What's the best protein powder for weight loss?", "acceptedAnswer": {"@type": "Answer", "text": "Whey protein isolate offers the best combination of high protein per calorie, complete amino acid profile, fast absorption, and taste. For dairy-free options, pea protein isolate or a pea-rice blend provides comparable amino acid coverage. Look for products with minimal added sugars and third-party testing."}}, {"@type": "Question", "name": "Does protein help you feel full?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Protein is the most satiating macronutrient. It reduces ghrelin (hunger hormone), increases peptide YY (satiety hormone), and has a higher thermic effect (your body burns more calories digesting protein than carbs or fat). This is a key reason high-protein diets support weight loss."}}, {"@type": "Question", "name": "Do older adults need more protein than younger adults?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Due to anabolic resistance, adults over 50 need approximately 25-30% more protein per meal to achieve the same muscle-building response as younger adults. calories.md recommends 0.7-0.9g per pound with at least 30-40g per meal for adults over 50."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://calories.md/blog/ultra-processed-food-guide/#article"},
           "wordCount": "746",
           "lastReviewed": "2026-02-24",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Are protein bars ultra-processed?", "acceptedAnswer": {"@type": "Answer", "text": "Most commercial protein bars are classified as ultra-processed under the NOVA system due to ingredient lists that include protein isolates, emulsifiers, sugar alcohols, and artificial flavors. However, their high protein content and convenience may still make them a better choice than many alternatives (candy, pastries). Context matters more than classification."}}, {"@type": "Question", "name": "Is bread ultra-processed?", "acceptedAnswer": {"@type": "Answer", "text": "It depends. Artisan bread made from flour, water, salt, and yeast is a processed food (NOVA Group 3). Commercial bread with added dough conditioners, preservatives, high-fructose corn syrup, and emulsifiers is ultra-processed (Group 4). Check the ingredient list \u2014 if it has more than 5-6 ingredients or substances you wouldn't use at home, it's likely UPF."}}, {"@type": "Question", "name": "Do ultra-processed foods cause cancer?", "acceptedAnswer": {"@type": "Answer", "text": "Some observational studies link high UPF consumption to increased cancer risk, particularly colorectal cancer. However, causality hasn't been established \u2014 UPF-heavy diets also correlate with lower fiber intake, higher calorie intake, obesity, and other cancer risk factors. The relationship is likely indirect rather than a direct carcinogenic effect of processing."}}, {"@type": "Question", "name": "Are frozen vegetables processed?", "acceptedAnswer": {"@type": "Answer", "text": "Frozen vegetables are minimally processed (NOVA Group 1). They're typically flash-frozen within hours of harvest, which preserves nutrients. Studies show frozen vegetables are nutritionally comparable \u2014 and sometimes superior \u2014 to fresh vegetables that have been transported and stored for days. calories.md considers them an excellent dietary choice."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

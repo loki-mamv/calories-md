@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://calories.md/blog/intermittent-fasting-guide/#article"},
           "wordCount": "872",
           "lastReviewed": "2026-02-17",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Does intermittent fasting slow your metabolism?", "acceptedAnswer": {"@type": "Answer", "text": "Short-term IF (16:8 or 5:2) does not significantly slow metabolism. Prolonged extreme fasting (multiple days) can reduce metabolic rate, but this isn't unique to IF \u2014 any severe caloric restriction has this effect. The metabolic slowdown fear is largely overstated for typical IF protocols."}}, {"@type": "Question", "name": "Can I drink coffee during my fasting window?", "acceptedAnswer": {"@type": "Answer", "text": "Black coffee (no sugar, cream, or milk) is generally considered fine during fasting and won't break your fast from a caloric standpoint. Coffee may actually enhance some fasting benefits through caffeine's effects on fat oxidation. Tea and water are also fine."}}, {"@type": "Question", "name": "Is 16:8 or 5:2 better for weight loss?", "acceptedAnswer": {"@type": "Answer", "text": "Neither is clearly superior. A 2023 systematic review found comparable weight loss between protocols. 16:8 is more popular because it's easier to follow daily. 5:2 allows normal eating most days but requires significant restriction twice weekly. Choose based on your lifestyle."}}, {"@type": "Question", "name": "Will intermittent fasting make me lose muscle?", "acceptedAnswer": {"@type": "Answer", "text": "IF can increase muscle loss risk if protein intake is inadequate or resistance training is neglected. To minimize muscle loss during IF, aim for at least 0.7g protein per pound of body weight, distribute protein across meals in your eating window, and maintain a strength training program."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -200,6 +205,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
