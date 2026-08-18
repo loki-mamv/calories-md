@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H85DH0R8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6H85DH0R8S');
+</script>
+<script>
+  // AI answer-engine attribution: capture utm/app/referrer signals on landing
+  (function(){
+    try {
+      var q = new URLSearchParams(location.search);
+      var ref = document.referrer || '';
+      var refHost = '';
+      if (ref) { try { refHost = new URL(ref).hostname; } catch(e) {} }
+      var ua = navigator.userAgent || '';
+      var hint = /ChatGPT|OAI-/i.test(ua) ? 'chatgpt-app' : /Perplexity/i.test(ua) ? 'perplexity-app' : /Claude/i.test(ua) ? 'claude-app' : '';
+      gtag('event', 'ai_attribution', {
+        ai_utm: q.get('utm_source') || '(none)',
+        ai_ref: refHost || '(direct)',
+        ai_ua_hint: hint || '(none)'
+      });
+    } catch(e) {}
+  })();
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Accurate Are Calorie Counts on Labels, Menus, and Fitness Trackers? &mdash; calories.md</title>
+    <meta name="description" content="FDA rules let a label understate calories and still comply. Restaurant menus are accurate on average but wrong on individual items. Wrist trackers missed energy burn by 27% to 93% in a Stanford study. Here is how to count anyway.">
+    <meta name="author" content="thrive.md Editorial Team">
+    <link rel="canonical" href="https://calories.md/blog/how-accurate-are-calorie-counts/">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://calories.md/blog/how-accurate-are-calorie-counts/">
+    <meta property="og:title" content="How Accurate Are Calorie Counts on Labels, Menus, and Fitness Trackers? &mdash; calories.md">
+    <meta property="og:description" content="FDA rules let a label understate calories and still comply. Restaurant menus are accurate on average but wrong on individual items. Wrist trackers missed energy burn by 27% to 93% in a Stanford study. Here is how to count anyway.">
+    <meta property="og:site_name" content="calories.md">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How Accurate Are Calorie Counts on Labels, Menus, and Fitness Trackers? &mdash; calories.md">
+    <meta name="twitter:description" content="FDA rules let a label understate calories and still comply. Restaurant menus are accurate on average but wrong on individual items. Wrist trackers missed energy burn by 27% to 93% in a Stanford study. Here is how to count anyway.">
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-topic" content="calorie count accuracy, nutrition label tolerance, FDA 20 percent rule, restaurant menu calories, fitness tracker accuracy, Atwater factors, metabolizable energy">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Article",
+        "MedicalWebPage"
+      ],
+      "@id": "https://calories.md/blog/how-accurate-are-calorie-counts/#article",
+      "headline": "How Accurate Are Calorie Counts on Labels, Menus, and Fitness Trackers?",
+      "description": "FDA rules let a label understate calories and still comply. Restaurant menus are accurate on average but wrong on individual items. Wrist trackers missed energy burn by 27% to 93% in a Stanford study. Here is how to count anyway.",
+      "url": "https://calories.md/blog/how-accurate-are-calorie-counts/",
+      "datePublished": "2026-08-18",
+      "dateModified": "2026-08-18",
+      "author": {
+        "@type": "Organization",
+        "name": "thrive.md Editorial Team",
+        "url": "https://thrive.md"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "calories.md",
+        "url": "https://calories.md"
+      },
+      "isPartOf": {
+        "@id": "https://calories.md/#website"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://calories.md/blog/how-accurate-are-calorie-counts/#article"
+      },
+      "wordCount": "1465",
+      "contributor": {
+        "@type": "Person",
+        "name": "Agustin Arrieta, MD",
+        "jobTitle": "Otolaryngologist",
+        "medicalSpecialty": "Otolaryngologic"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a nutrition label legally understate calories?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Under FDA regulation 21 CFR 101.9(g), the measured calorie content of a product must not exceed the declared value by more than 20%. The rule is one-directional for calories, fat, sugars, sodium, and cholesterol: a product can contain fewer calories than stated without any violation, but it cannot substantially exceed the stated amount. So the realistic worst case for someone tracking intake is up to 20% more than the label says."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are restaurant menu calorie counts reliable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Accurate on average, unreliable item by item. A JAMA study measured 269 food items from 42 restaurants by bomb calorimetry. The average difference was only 10 kcal per portion, which was not statistically significant. But 19% of foods, 50 items, contained more than 100 kcal per portion above the stated value, and understatement was worst among the lower-calorie items marketed as the healthy choice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do almonds really have fewer calories than the label says?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For whole almonds, yes. A 2012 American Journal of Clinical Nutrition study measured the energy humans actually extract from almonds at 4.6 kcal per gram, or about 129 kcal per 28-gram serving, compared with the 168 to 170 kcal predicted by standard Atwater factors. That is a 32% overestimate. The intact cell walls of whole nuts prevent full fat absorption. Almond butter, where that structure is destroyed, does not show the same gap."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate is the calorie burn on my smartwatch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not accurate. A Stanford study published in the Journal of Personalized Medicine tested seven wrist-worn devices against indirect calorimetry. Heart rate measurement was reasonably good, with median error under about 5% for most activities. Energy expenditure was not: no device was accurate, the best had a median error of 27%, and the worst was off by 93%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I eat back the calories my tracker says I burned?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generally no, or only a fraction of them. Exercise calorie estimates are the least accurate number in the whole system and they are usually inflated. A common approach is to ignore the exercise figure entirely, set intake from a calculated maintenance estimate, and adjust based on what the scale actually does over three to four weeks."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: #fafaf9; color: var(--text-primary); line-height: 1.7; font-size: 16px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { color: var(--accent-dark); text-decoration: underline; }
+
+        /* Header */
+        .site-header { border-bottom: 1px solid var(--border); padding: 1rem 0; background: #fff; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; }
+        .site-logo { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--accent); }
+        .site-nav a { margin-left: 1.5rem; color: var(--text-secondary); font-size: 0.9rem; }
+
+        .container { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+        .container-wide { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Article */
+        .article-header { padding: 3rem 0 2rem; }
+        .article-header h1 { font-family: var(--font-display); font-size: 2.25rem; line-height: 1.25; font-weight: 700; margin-bottom: 1rem; }
+        .article-meta { color: var(--text-muted); font-size: 0.875rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .article-meta time, .article-meta .reading-time { display: flex; align-items: center; gap: 0.35rem; }
+
+        /* TOC */
+        .toc { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+        .toc-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-primary); }
+        .toc ol { padding-left: 1.25rem; }
+        .toc li { margin-bottom: 0.35rem; font-size: 0.9rem; }
+        .toc a { color: var(--text-secondary); }
+
+        /* Content */
+        .article-body { padding-bottom: 2rem; }
+        .article-body h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+        .article-body h3 { font-size: 1.2rem; font-weight: 600; margin: 1.5rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.25rem; }
+        .article-body ul, .article-body ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .article-body li { margin-bottom: 0.5rem; }
+        .article-body blockquote { border-left: 3px solid var(--accent); padding: 0.75rem 1rem; background: var(--bg-secondary); margin-bottom: 1.25rem; font-style: italic; color: var(--text-secondary); }
+        .article-body .source-cite { font-size: 0.8rem; color: var(--text-muted); }
+        .article-body .source-cite a { color: var(--accent); }
+
+        /* FAQ */
+        .faq-section { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin: 2rem 0; }
+        .faq-section h2 { border: none; margin-top: 0; padding-top: 0; }
+        .faq-item { margin-bottom: 1.5rem; }
+        .faq-item:last-child { margin-bottom: 0; }
+        .faq-item h3 { font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--accent-dark); }
+        .faq-item p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        /* Share */
+        .share-bar { display: flex; gap: 0.75rem; margin: 2rem 0; padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); align-items: center; }
+        .share-bar span { font-size: 0.875rem; color: var(--text-muted); }
+        .share-btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; font-weight: 500; border: 1px solid var(--border); color: var(--text-secondary); background: #fff; cursor: pointer; transition: all 0.2s; }
+        .share-btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Related */
+        .related-posts { margin: 2rem 0; }
+        .related-posts h2 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 1rem; border: none; padding: 0; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .related-card { border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; background: #fff; transition: border-color 0.2s; }
+        .related-card:hover { border-color: var(--accent); }
+        .related-card h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+        .related-card p { font-size: 0.8rem; color: var(--text-muted); }
+
+        /* Cross-links */
+        .cross-links { margin: 2rem 0; padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; }
+        .cross-links h3 { font-size: 0.95rem; margin-bottom: 0.75rem; color: var(--text-secondary); }
+        .cross-links-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .cross-links-list a { padding: 0.35rem 0.75rem; border: 1px solid var(--border); border-radius: 20px; font-size: 0.8rem; color: var(--text-secondary); background: #fff; }
+        .cross-links-list a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Disclaimer */
+        .disclaimer { margin: 2rem 0; padding: 1.25rem; background: #fefce8; border: 1px solid #fde68a; border-radius: 8px; font-size: 0.8rem; color: #92400e; line-height: 1.6; }
+
+        /* Footer */
+        .site-footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 2rem; text-align: center; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+        .footer-links a { font-size: 0.8rem; color: var(--text-muted); }
+        .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+
+        @media (max-width: 640px) {
+            .article-header h1 { font-size: 1.75rem; }
+            .related-grid { grid-template-columns: 1fr; }
+        }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container-wide">
+            <a href="https://calories.md/" class="site-logo">calories.md</a>
+            <nav class="site-nav">
+                <a href="https://calories.md/">Home</a>
+                <a href="https://calories.md/blog/">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="container">
+            <header class="article-header">
+                <h1>How Accurate Are Calorie Counts on Labels, Menus, and Fitness Trackers?</h1>
+                <div class="article-meta">
+                    <time datetime="2026-08-18">August 18, 2026</time>
+                    <span class="reading-time">7 min read</span>
+                    <span>By thrive.md Editorial Team</span>
+                </div>
+                    <div class="medical-reviewer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Medical advisor: Agustin Arrieta, MD &mdash; Otolaryngologist (ENT), South Florida</span></div>
+            </header>
+
+            <nav class="toc"><div class="toc-title">Table of Contents</div><ol><li><a href="#the-short-answer">The short answer</a></li><li><a href="#how-far-off-can-a-nutrition-label-legally-be">How far off can a nutrition label legally be?</a></li><li><a href="#are-restaurant-menu-calories-accurate">Are restaurant menu calories accurate?</a></li><li><a href="#why-your-body-doesnt-absorb-the-calories-on-the-label">Why your body doesn&#x27;t absorb the calories on the label</a></li><li><a href="#how-wrong-are-fitness-trackers-about-calories-burned">How wrong are fitness trackers about calories burned?</a></li><li><a href="#so-is-calorie-counting-pointless">So is calorie counting pointless?</a></li><li><a href="#how-to-count-in-a-way-that-survives-the-error">How to count in a way that survives the error</a></li><li><a href="#when-the-numbers-stop-matching-the-scale">When the numbers stop matching the scale</a></li></ol></nav>
+
+            <div class="article-body">
+<p>You log 1,800 calories, your watch says you burned 2,400, and the scale does not move for three weeks. Something in that chain is wrong, and it is worth knowing exactly which part.</p>
+
+<p>The answer is that every number in that sentence carries error, but not the same amount. Food labels are the most reliable link. Menu calories are decent on average and unreliable individually. The calorie-burn figure on your wrist is, in most cases, close to guesswork. Knowing the size of each error tells you which numbers to trust and which to ignore.</p>
+
+<h2 id="the-short-answer">The short answer</h2>
+
+<p>Packaged food labels can legally understate calories by up to 20%, and the tolerance only runs in that one direction. Restaurant menu counts are accurate on average but individually variable, with 19% of tested items exceeding their stated calories by more than 100 per portion. Wrist-worn trackers were off on energy expenditure by 27% at best and 93% at worst in controlled testing.</p>
+
+<p>None of that makes calorie tracking useless. It makes tracking useful as a <em>consistent index</em> rather than as a measurement of truth.</p>
+
+<h2 id="how-far-off-can-a-nutrition-label-legally-be">How far off can a nutrition label legally be?</h2>
+
+<p>This is the part most people have heard about and most people get slightly wrong.</p>
+
+<p>FDA regulation <a href="https://www.law.cornell.edu/cfr/text/21/101.9" target="_blank" rel="noopener">21 CFR 101.9(g)</a> sets compliance tolerances for nutrition labeling. For calories, total fat, saturated fat, cholesterol, sodium, and sugars, the measured content of a composite sample must not be more than 20% in excess of the value declared on the label.</p>
+
+<p>Two implications follow, and the second is the one that gets missed:</p>
+
+<ul>
+  <li>The realistic worst case for a calorie tracker is that a food contains up to 20% more than stated. A 200-calorie bar could legally test at 240.</li>
+  <li>The tolerance is <strong>asymmetric</strong>, not a plus-or-minus 20% window. Nothing in the rule stops a product from containing meaningfully fewer calories than declared. For nutrients people want more of, such as protein, fiber, vitamins, and minerals, the direction reverses: those must be present at essentially the declared amount or above.</li>
+</ul>
+
+<p>Worth noting: this is a compliance ceiling, not a description of typical performance. Most mainstream packaged products are considerably closer than 20%, because manufacturers build in margin to stay well clear of an enforcement problem. The tolerance describes how bad it is allowed to get, not how bad it usually is.</p>
+
+<h2 id="are-restaurant-menu-calories-accurate">Are restaurant menu calories accurate?</h2>
+
+<p>On average, surprisingly yes. Item by item, not really.</p>
+
+<p>A study published in <a href="https://jamanetwork.com/journals/jama/fullarticle/1104116" target="_blank" rel="noopener">JAMA</a> collected 269 food items from 42 restaurants across three states and measured their energy content by bomb calorimetry. Measured values averaged 10 kcal per portion above the stated values, a difference well within statistical noise, with a 95% confidence interval running from −15 to +34 kcal.</p>
+
+<p>The average hides the useful finding. Nineteen percent of the foods tested, 50 items, contained more than 100 kcal per portion above what the menu claimed. And the understatement was concentrated among the <em>lower-calorie</em> items, exactly the dishes people order because the number looked good.</p>
+
+<p>The practical reading: a 900-calorie burrito is probably around 900 calories. A 320-calorie "light" bowl has a meaningfully higher chance of being 450. Portioning at a restaurant is done by hand, and the sauce, oil, and dressing are where the variance lives.</p>
+
+<h2 id="why-your-body-doesnt-absorb-the-calories-on-the-label">Why your body doesn't absorb the calories on the label</h2>
+
+<p>There is a second, more interesting source of error that has nothing to do with measurement quality. Even a perfectly measured label may not reflect what you actually absorb.</p>
+
+<p>Calorie values on labels are typically derived from Atwater factors: 4 kcal per gram of protein, 4 per gram of carbohydrate, 9 per gram of fat. Those are population averages established over a century ago, and they assume near-complete digestion.</p>
+
+<p>Whole nuts are the clearest counterexample. A <a href="https://pubmed.ncbi.nlm.nih.gov/22760558/" target="_blank" rel="noopener">2012 study in the American Journal of Clinical Nutrition</a> measured the energy humans actually extract from almonds at 4.6 kcal per gram, roughly 129 kcal per 28-gram serving. The Atwater prediction was 168 to 170 kcal for the same serving, a 32% overestimate. The reason is structural: intact plant cell walls trap some of the fat and it passes through undigested.</p>
+
+<p>The same logic runs the other way. Grinding, cooking, and processing all increase how much energy you extract from the same gram of food. Almond butter behaves differently from whole almonds. This is one of the mechanisms behind the effects attributed to <a href="https://calories.md/blog/ultra-processed-food-guide/">ultra-processed foods</a>, and it is a real reason two diets with identical logged calories can produce different results.</p>
+
+<h2 id="how-wrong-are-fitness-trackers-about-calories-burned">How wrong are fitness trackers about calories burned?</h2>
+
+<p>This is the weakest number in the entire system, and it is the one people most often act on.</p>
+
+<p>A Stanford study published in the <a href="https://www.mdpi.com/2075-4426/7/2/3" target="_blank" rel="noopener">Journal of Personalized Medicine</a> tested seven wrist-worn devices, including the Apple Watch, Fitbit Surge, Microsoft Band, and Samsung Gear S2, against clinical reference standards: continuous telemetry for heart rate and indirect calorimetry for energy expenditure. Participants sat, walked, ran, and cycled.</p>
+
+<p>The split in the results is stark:</p>
+
+<ul>
+  <li><strong>Heart rate: good.</strong> Median error was lowest for cycling at 1.8% and highest for walking at 5.5%.</li>
+  <li><strong>Energy expenditure: bad.</strong> No device met an acceptable accuracy threshold. The most accurate device had a median error of 27%. The least accurate was off by 93%.</li>
+</ul>
+
+<p>The reason for the gap is straightforward. Heart rate is directly measured. Calorie burn is inferred from heart rate, movement, and demographic inputs through a proprietary model that cannot know your actual body composition, movement efficiency, or metabolic rate. Cardio machine displays have the same problem and generally worse inputs, since most do not know your weight unless you tell them.</p>
+
+<p>Step counts and heart rate are worth using. The calorie figure is not a measurement.</p>
+
+<h2 id="so-is-calorie-counting-pointless">So is calorie counting pointless?</h2>
+
+<p>No, and the reason is worth being clear about.</p>
+
+<p>Most of the error described above is <em>systematic</em> rather than random. If your usual breakfast is actually 12% higher than you log, it is 12% higher every day. That constant offset shifts the absolute number but leaves the comparison intact. When you cut 300 logged calories, you have almost certainly cut real calories, even if neither the before nor the after figure is exactly right.</p>
+
+<p>This is why calorie tracking works in practice despite being inaccurate in principle. It is a reliable relative measure attached to an unreliable absolute one. Trouble starts only when people treat the absolute number as truth, most commonly by eating back an inflated exercise estimate.</p>
+
+<p>The one genuine failure mode is inconsistency: eyeballing portions some days and weighing them others, or logging carefully on weekdays and not at all on weekends. That converts systematic error into random error, and random error is what makes tracking stop working.</p>
+
+<h2 id="how-to-count-in-a-way-that-survives-the-error">How to count in a way that survives the error</h2>
+
+<p>Practical adjustments, roughly in order of impact:</p>
+
+<ul>
+  <li><strong>Weigh in grams rather than using cups or spoons.</strong> Volume measures for calorie-dense foods are the largest avoidable error in most people's logs. Peanut butter and oil are the usual offenders.</li>
+  <li><strong>Ignore the exercise calorie figure.</strong> Set intake from a calculated maintenance estimate and let activity be part of the baseline. <a href="https://calories.md/blog/how-to-calculate-tdee/">This TDEE guide</a> covers how to build that estimate.</li>
+  <li><strong>Use the same database entries every time.</strong> Crowd-sourced entries vary wildly. Consistency matters more than which entry is right.</li>
+  <li><strong>Log restaurant meals generously.</strong> Adding 20% to a restaurant estimate is defensible given the data above.</li>
+  <li><strong>Track a trend weight, not a daily weight.</strong> Use a weekly average and compare across three to four weeks. Day-to-day fluctuation is water and glycogen, not fat.</li>
+  <li><strong>Prioritize protein accuracy.</strong> Protein is the number worth getting right for satiety and for preserving muscle in a deficit; <a href="https://calories.md/blog/protein-intake-guide/">this guide covers targets</a>. This matters especially for anyone eating much less than usual, including people taking appetite-suppressing medications, as <a href="https://glp1.md/" target="_blank" rel="noopener">glp1.md</a> covers in more detail.</li>
+</ul>
+
+<h2 id="when-the-numbers-stop-matching-the-scale">When the numbers stop matching the scale</h2>
+
+<p>If the log says deficit and the weight has genuinely not moved over four weeks of consistent tracking, the productive assumption is not that your metabolism is broken. In roughly descending order of likelihood:</p>
+
+<ol>
+  <li>Intake is higher than logged. Untracked oil, drinks, bites while cooking, and weekend meals are the usual sources.</li>
+  <li>Exercise calories are being eaten back based on an inflated estimate.</li>
+  <li>Non-exercise movement has dropped, which happens quietly during a deficit.</li>
+  <li>Water retention is masking fat loss, particularly with a new training program, a high-sodium stretch, or the luteal phase of the menstrual cycle.</li>
+  <li>Weight really is stable and the intake target simply needs a modest reduction.</li>
+</ol>
+
+<p>The fix is almost never a more precise calorie number. It is a longer measurement window and one deliberate change at a time. If daily logging has become a source of stress rather than information, <a href="https://calories.md/blog/calorie-deficit-without-counting/">there are evidence-based ways to run a deficit without counting at all</a>.</p>
+            </div>
+
+            <div class="faq-section"><h2>Frequently Asked Questions</h2><div class="faq-item"><h3>Can a nutrition label legally understate calories?</h3><p>Yes. Under FDA regulation 21 CFR 101.9(g), the measured calorie content of a product must not exceed the declared value by more than 20%. The rule is one-directional for calories, fat, sugars, sodium, and cholesterol: a product can contain fewer calories than stated without any violation, but it cannot substantially exceed the stated amount. So the realistic worst case for someone tracking intake is up to 20% more than the label says.</p></div><div class="faq-item"><h3>Are restaurant menu calorie counts reliable?</h3><p>Accurate on average, unreliable item by item. A JAMA study measured 269 food items from 42 restaurants by bomb calorimetry. The average difference was only 10 kcal per portion, which was not statistically significant. But 19% of foods, 50 items, contained more than 100 kcal per portion above the stated value, and understatement was worst among the lower-calorie items marketed as the healthy choice.</p></div><div class="faq-item"><h3>Do almonds really have fewer calories than the label says?</h3><p>For whole almonds, yes. A 2012 American Journal of Clinical Nutrition study measured the energy humans actually extract from almonds at 4.6 kcal per gram, or about 129 kcal per 28-gram serving, compared with the 168 to 170 kcal predicted by standard Atwater factors. That is a 32% overestimate. The intact cell walls of whole nuts prevent full fat absorption. Almond butter, where that structure is destroyed, does not show the same gap.</p></div><div class="faq-item"><h3>How accurate is the calorie burn on my smartwatch?</h3><p>Not accurate. A Stanford study published in the Journal of Personalized Medicine tested seven wrist-worn devices against indirect calorimetry. Heart rate measurement was reasonably good, with median error under about 5% for most activities. Energy expenditure was not: no device was accurate, the best had a median error of 27%, and the worst was off by 93%.</p></div><div class="faq-item"><h3>Should I eat back the calories my tracker says I burned?</h3><p>Generally no, or only a fraction of them. Exercise calorie estimates are the least accurate number in the whole system and they are usually inflated. A common approach is to ignore the exercise figure entirely, set intake from a calculated maintenance estimate, and adjust based on what the scale actually does over three to four weeks.</p></div></div>
+
+            <div class="share-bar">
+                <span>Share:</span>
+                <a class="share-btn" href="https://twitter.com/intent/tweet?text=How%20Accurate%20Are%20Calorie%20Counts%20on%20Labels%2C%20Menus%2C%20and%20Fitness%20Trackers%3F&url=https://calories.md/blog/how-accurate-are-calorie-counts/" target="_blank" rel="noopener">&#120143; Twitter</a>
+                <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://calories.md/blog/how-accurate-are-calorie-counts/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+
+            <div class="cross-links">
+                <h3>Explore Related Health Topics</h3>
+                <div class="cross-links-list">
+                    <a href="https://glp1.md/">glp1.md</a><a href="https://ozempic.md/">ozempic.md</a><a href="https://thrive.md/">thrive.md</a>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with questions about a medical condition. Never disregard professional medical advice or delay seeking it because of something you read on this site. If you are in crisis, call 988 (Suicide &amp; Crisis Lifeline) or go to your nearest emergency room.
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container-wide">
+            <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
+                <a href="https://thrive.md">thrive.md</a>
+                <a href="https://anxiety.md">anxiety.md</a>
+                <a href="https://depression.md">depression.md</a>
+                <a href="https://ptsd.md">ptsd.md</a>
+                <a href="https://bipolar.md">bipolar.md</a>
+                <a href="https://ocd.md">ocd.md</a>
+                <a href="https://insomnia.md">insomnia.md</a>
+                <a href="https://ozempic.md">ozempic.md</a>
+                <a href="https://hypertension.md">hypertension.md</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 calories.md — Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
+        </div>
+    </footer>
+
+    <script>
+    // GA4 engagement tracking
+    let scrollMax = 0;
+    window.addEventListener('scroll', function() {
+        const pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        if (pct > scrollMax) {
+            scrollMax = pct;
+            if ([25, 50, 75, 100].includes(pct)) {
+                gtag('event', 'scroll_depth', { percent: pct, page: location.pathname });
+            }
+        }
+    });
+    // Time on page
+    const startTime = Date.now();
+    window.addEventListener('beforeunload', function() {
+        const seconds = Math.round((Date.now() - startTime) / 1000);
+        gtag('event', 'time_on_page', { seconds: seconds, page: location.pathname });
+    });
+    </script>
+</body>
+</html>
