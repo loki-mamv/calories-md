@@ -1,15 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H85DH0R8S');gtag('config','G-5H4J34C7ZQ"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-6H85DH0R8S');gtag('config','G-5H4J34C7ZQ');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources — calories.md</title>
-    <link rel="canonical" href="https://calories.md/blog/">
-    <meta http-equiv="refresh" content="0; url=https://calories.md/blog/">
-    <style>body{font-family:'Inter',-apple-system,system-ui,sans-serif;color:#0f172a;max-width:640px;margin:0 auto;padding:96px 24px;line-height:1.7}a{color:#0d9488}</style>
+    <title>Calorie &amp; Nutrition Resources — Calculators, Databases, and Guidelines</title>
+    <meta name="description" content="Vetted calorie and nutrition resources: the 2025-2030 Dietary Guidelines, the NIH Body Weight Planner, USDA FoodData Central, and CDC weight guidance.">
+    <link rel="canonical" href="https://calories.md/resources.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        header {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px; margin: 0 auto; padding: 16px 24px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display); font-size: 22px; font-weight: 600;
+            color: var(--text-primary); text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary); text-decoration: none;
+            font-size: 14px; font-weight: 500; transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        .page-header {
+            max-width: 720px; margin: 0 auto; padding: 80px 24px 48px;
+        }
+        h1 {
+            font-family: var(--font-display); font-size: 42px;
+            font-weight: 700; margin-bottom: 16px;
+        }
+        .page-intro {
+            font-size: 18px; color: var(--text-secondary); line-height: 1.7;
+        }
+        main { max-width: 720px; margin: 0 auto; padding: 0 24px 64px; }
+        .resource-section {
+            margin-bottom: 56px;
+        }
+        .resource-section h2 {
+            font-family: var(--font-display); font-size: 28px;
+            font-weight: 700; margin-bottom: 24px;
+        }
+        .resource-list {
+            border-top: 1px solid var(--border);
+        }
+        .resource-item {
+            padding: 24px 0; border-bottom: 1px solid var(--border);
+        }
+        .resource-item h3 {
+            font-family: var(--font-display); font-size: 18px;
+            font-weight: 600; margin-bottom: 6px;
+        }
+        .resource-item h3 a {
+            color: var(--text-primary); text-decoration: none;
+            transition: color 0.2s;
+        }
+        .resource-item h3 a:hover { color: var(--accent); }
+        .resource-item p {
+            font-size: 15px; color: var(--text-secondary); line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        .resource-meta {
+            font-size: 13px; color: var(--text-muted);
+        }
+        .emergency-box {
+            background: #fee; border: 2px solid #d33;
+            border-radius: 12px; padding: 24px; margin: 32px 0;
+        }
+        .emergency-box h3 {
+            font-family: var(--font-display); font-size: 20px;
+            color: #d33; margin-bottom: 12px;
+        }
+        .emergency-box p {
+            font-size: 15px; color: #600; line-height: 1.6; margin-bottom: 12px;
+        }
+        .emergency-box strong { font-size: 18px; display: block; margin-top: 8px; }
+        footer {
+            background: var(--bg-secondary); border-top: 1px solid var(--border);
+            padding: 48px 24px; margin-top: 64px;
+        }
+        .footer-inner {
+            max-width: 1100px; margin: 0 auto;
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
+        }
+        .footer-brand .logo { display: inline-block; margin-bottom: 12px; }
+        .footer-brand p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+        .footer-links h4 {
+            font-size: 12px; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.5px; margin-bottom: 12px;
+        }
+        .footer-links a {
+            display: block; color: var(--text-muted); text-decoration: none;
+            font-size: 14px; margin-bottom: 8px; transition: color 0.2s;
+        }
+        .footer-links a:hover { color: var(--accent); }
+        .footer-bottom {
+            max-width: 1100px; margin: 32px auto 0; padding-top: 24px;
+            border-top: 1px solid var(--border); display: flex;
+            justify-content: space-between; font-size: 13px; color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            h1 { font-size: 32px; }
+            .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+        }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
+    </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://calories.md/resources.html",
+  "url": "https://calories.md/resources.html",
+  "name": "Calorie & Nutrition Resources — Calculators, Databases, and Guidelines",
+  "description": "Vetted calorie and nutrition resources: the 2025-2030 Dietary Guidelines, the NIH Body Weight Planner, USDA FoodData Central, and CDC weight guidance.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://thrive.md/#organization",
+    "name": "thrive.md",
+    "url": "https://thrive.md"
+  },
+  "hasPart": [
+    {
+      "@type": "WebPage",
+      "name": "Dietary Guidelines for Americans, 2025-2030",
+      "url": "https://realfood.gov/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Steps for Losing Weight (CDC)",
+      "url": "https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html"
+    },
+    {
+      "@type": "WebPage",
+      "name": "NIH Body Weight Planner",
+      "url": "https://www.niddk.nih.gov/bwp"
+    },
+    {
+      "@type": "WebPage",
+      "name": "USDA FoodData Central",
+      "url": "https://fdc.nal.usda.gov/"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "calories.md",
+      "item": "https://calories.md/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://calories.md/resources.html"
+    }
+  ]
+}
+    </script>
 </head>
 <body>
-    <p>This page has moved to <a href="https://calories.md/blog/">https://calories.md/blog/</a>.</p>
-    <script>window.location.replace("https://calories.md/blog/");</script>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">calories<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/resources.html">Resources</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="/blog/">Blog</a>
+            </nav>
+        </div>
+    </header>
+    <div class="page-header">
+        <h1>Calorie &amp; Nutrition Resources</h1>
+        <p class="page-intro">Calculators, databases, and official guidance worth your time. Everything here comes from a US government health or agriculture agency.</p>
+    </div>
+    <main>
+        <div class="emergency-box">
+            <h3>⚠️ When calorie tracking needs clinical help</h3>
+            <p>Talk to a clinician rather than adjusting your intake further if you notice:<br>• Restricting, bingeing, or purging, or distress that dominates your day<br>• Rapid unintended weight loss you did not set out to cause<br>• Fainting, dizziness, or missed periods while dieting<br>• Tracking that has become compulsive and hard to stop</p>
+            <strong>Eating disorder support: call or text the 988 Suicide &amp; Crisis Lifeline, or speak with your primary care clinician.</strong>
+        </div>
+        <section class="resource-section">
+            <h2>Guidelines &amp; Official Guidance</h2>
+            <div class="resource-list">
+                <div class="resource-item">
+                    <h3><a href="https://realfood.gov/" target="_blank" rel="noopener">Dietary Guidelines for Americans, 2025-2030</a></h3>
+                    <p>The current edition, released January 2026 by USDA and HHS. Short enough to read in one sitting, and the basis for federal nutrition programs.</p>
+                    <span class="resource-meta">Free • Government source • PDF</span>
+                </div>
+                <div class="resource-item">
+                    <h3><a href="https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html" target="_blank" rel="noopener">Steps for Losing Weight (CDC)</a></h3>
+                    <p>The CDC&#x27;s guidance on gradual weight loss, including why 1 to 2 pounds a week is the target and how activity and intake work together.</p>
+                    <span class="resource-meta">Free • Government source</span>
+                </div>
+            </div>
+        </section>
+        <section class="resource-section">
+            <h2>Calculators &amp; Databases</h2>
+            <div class="resource-list">
+                <div class="resource-item">
+                    <h3><a href="https://www.niddk.nih.gov/bwp" target="_blank" rel="noopener">NIH Body Weight Planner</a></h3>
+                    <p>A validated model from NIDDK that estimates the intake and activity needed to reach a goal weight and then maintain it. More realistic than fixed-formula calculators because it accounts for metabolic adaptation.</p>
+                    <span class="resource-meta">Free • Government source</span>
+                </div>
+                <div class="resource-item">
+                    <h3><a href="https://fdc.nal.usda.gov/" target="_blank" rel="noopener">USDA FoodData Central</a></h3>
+                    <p>The USDA&#x27;s reference database for the nutrient content of foods. The source most other calorie databases are ultimately derived from.</p>
+                    <span class="resource-meta">Free • Government source • Searchable</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="email-capture" style="background: linear-gradient(135deg, #f0fdfa 0%, #f8fafc 100%); border: 1px solid #ccfbf1; border-radius: 12px; padding: 2rem; margin: 2rem 0; text-align: center;">
+        <p style="font-family: 'Source Serif 4', Georgia, serif; font-size: 1.2rem; font-weight: 600; color: #0f172a; margin-bottom: 0.25rem;">Get evidence-based health updates</p>
+        <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 1rem;">No spam. Unsubscribe anytime.</p>
+        <form class="email-form" style="display: flex; gap: 0.5rem; max-width: 420px; margin: 0 auto; flex-wrap: wrap; justify-content: center;" onsubmit="submitEmail(event)">
+            <input type="email" name="email" placeholder="you@example.com" required style="flex: 1; min-width: 200px; padding: 0.6rem 1rem; border: 1px solid #d1d5db; border-radius: 8px; font-size: 0.95rem; outline: none;">
+            <input type="hidden" name="source" value="calories.md">
+            <button type="submit" style="padding: 0.6rem 1.5rem; background: #0d9488; color: white; border: none; border-radius: 8px; font-size: 0.95rem; font-weight: 500; cursor: pointer;">Subscribe</button>
+        </form>
+        <p class="email-success" style="display: none; color: #0d9488; margin-top: 0.75rem; font-weight: 500;">✓ You're in! Check your inbox.</p>
+    </div>
+    <script>
+    function submitEmail(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        fetch('https://script.google.com/macros/s/AKfycbwUqO3zauyG_tuCZk0NALIDybayC7JhTbSm7RcQhivv6Lq0XCrQ8YgopTFqXjMSwt72/exec', {
+            method: 'POST', body: data, mode: 'no-cors'
+        }).then(() => {
+            form.style.display = 'none';
+            form.parentElement.querySelector('.email-success').style.display = 'block';
+        });
+    }
+    </script>
+
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="/" class="logo">calories<span>.md</span></a>
+                <p>Part of the <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a> health network.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="/resources.html">Resource Library</a>
+                <a href="/faq.html">Common Questions</a>
+                <a href="/blog/">Articles</a>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="https://thrive.md/editorial-policy.html">Editorial Policy</a>
+                <a href="https://thrive.md/medical-review.html">Medical Review</a>
+                <a href="https://thrive.md/disclaimer.html">Medical Disclaimer</a>
+                <a href="https://thrive.md/privacy.html">Privacy</a>
+                <a href="https://thrive.md/terms.html">Terms</a>
+                <a href="mailto:hello@thrive.md">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Network</h4>
+                <a href="https://thrive.md">thrive.md</a>
+                <a href="https://anxiety.md">anxiety.md</a>
+                <a href="https://adhd.md">adhd.md</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 calories.md</p>
+            <p>Medical information, not medical advice</p>
+        </div>
+    </footer>
 </body>
 </html>
