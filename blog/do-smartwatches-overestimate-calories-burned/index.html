@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6H85DH0R8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6H85DH0R8S');
+</script>
+<script>
+  // AI answer-engine attribution: capture utm/app/referrer signals on landing
+  (function(){
+    try {
+      var q = new URLSearchParams(location.search);
+      var ref = document.referrer || '';
+      var refHost = '';
+      if (ref) { try { refHost = new URL(ref).hostname; } catch(e) {} }
+      var ua = navigator.userAgent || '';
+      var hint = /ChatGPT|OAI-/i.test(ua) ? 'chatgpt-app' : /Perplexity/i.test(ua) ? 'perplexity-app' : /Claude/i.test(ua) ? 'claude-app' : '';
+      gtag('event', 'ai_attribution', {
+        ai_utm: q.get('utm_source') || '(none)',
+        ai_ref: refHost || '(direct)',
+        ai_ua_hint: hint || '(none)'
+      });
+    } catch(e) {}
+  })();
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Smartwatches Overestimate the Calories You Burn During a Workout? &mdash; calories.md</title>
+    <meta name="description" content="Smartwatch calorie errors top 30% for every brand. Pooled studies show a slight undercount, but one 2026 study found weight training readings about double.">
+    <meta name="author" content="thrive.md Editorial Team">
+    <link rel="canonical" href="https://calories.md/blog/do-smartwatches-overestimate-calories-burned/">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://calories.md/blog/do-smartwatches-overestimate-calories-burned/">
+    <meta property="og:title" content="Do Smartwatches Overestimate the Calories You Burn During a Workout? &mdash; calories.md">
+    <meta property="og:description" content="Smartwatch calorie errors top 30% for every brand. Pooled studies show a slight undercount, but one 2026 study found weight training readings about double.">
+    <meta property="og:site_name" content="calories.md">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Do Smartwatches Overestimate the Calories You Burn During a Workout? &mdash; calories.md">
+    <meta name="twitter:description" content="Smartwatch calorie errors top 30% for every brand. Pooled studies show a slight undercount, but one 2026 study found weight training readings about double.">
+    <meta name="ai-content" content="allowed">
+    <meta name="ai-topic" content="smartwatch calorie accuracy, wearable energy expenditure, fitness tracker validation, Apple Watch calories, exercise calories">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Article",
+        "MedicalWebPage"
+      ],
+      "@id": "https://calories.md/blog/do-smartwatches-overestimate-calories-burned/#article",
+      "headline": "Do Smartwatches Overestimate the Calories You Burn During a Workout?",
+      "description": "Smartwatch calorie errors top 30% for every brand. Pooled studies show a slight undercount, but one 2026 study found weight training readings about double.",
+      "url": "https://calories.md/blog/do-smartwatches-overestimate-calories-burned/",
+      "datePublished": "2026-09-15",
+      "dateModified": "2026-09-15",
+      "author": {
+        "@type": "Organization",
+        "name": "thrive.md Editorial Team",
+        "url": "https://thrive.md"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "calories.md",
+        "url": "https://calories.md"
+      },
+      "isPartOf": {
+        "@id": "https://calories.md/#website"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://calories.md/blog/do-smartwatches-overestimate-calories-burned/#article"
+      },
+      "wordCount": "1158",
+      "contributor": {
+        "@type": "Person",
+        "name": "Agustin Arrieta, MD",
+        "jobTitle": "Otolaryngologist",
+        "medicalSpecialty": "Otolaryngologic"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the Apple Watch more accurate for calories than Fitbit or Garmin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No brand has a clear lead for calories. A 2022 systematic review found errors above 30% for every brand, and the Apple Watch ranged from 15% to 211% across studies. Apple Watch does rank among the most accurate for heart rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a chest strap make calorie estimates accurate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A chest strap improves heart rate accuracy, but the calorie figure is still a model output. In a 2018 study, the Polar H7 strap was valid for heart rate, yet no device met the accuracy cutoff for energy expenditure. The strap does not know your fitness level or oxygen use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are calorie numbers on treadmills and bikes better than watches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They share the same problem. Machines estimate calories from speed, incline, or power plus the weight you enter, not from your oxygen use. Without accurate inputs, the figure can drift well away from what you burned."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my watch's total daily calorie burn more reliable than its workout number?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not by much. In a 15-day study using doubly labeled water, most of 12 devices significantly underestimated daily activity energy expenditure. Use the daily figure as a trend to compare against yourself, not as a target to eat to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can entering my exact weight and age fix the error?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Correct profile data helps, but it does not remove the error. Research on heart rate models shows fitness level also changes how heart rate relates to calories burned. Most watches cannot measure that directly."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); background: #fafaf9; color: var(--text-primary); line-height: 1.7; font-size: 16px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { color: var(--accent-dark); text-decoration: underline; }
+
+        /* Header */
+        .site-header { border-bottom: 1px solid var(--border); padding: 1rem 0; background: #fff; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; }
+        .site-logo { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; color: var(--accent); }
+        .site-nav a { margin-left: 1.5rem; color: var(--text-secondary); font-size: 0.9rem; }
+
+        .container { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+        .container-wide { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* Article */
+        .article-header { padding: 3rem 0 2rem; }
+        .article-header h1 { font-family: var(--font-display); font-size: 2.25rem; line-height: 1.25; font-weight: 700; margin-bottom: 1rem; }
+        .article-meta { color: var(--text-muted); font-size: 0.875rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .article-meta time, .article-meta .reading-time { display: flex; align-items: center; gap: 0.35rem; }
+
+        /* TOC */
+        .toc { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+        .toc-title { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-primary); }
+        .toc ol { padding-left: 1.25rem; }
+        .toc li { margin-bottom: 0.35rem; font-size: 0.9rem; }
+        .toc a { color: var(--text-secondary); }
+
+        /* Content */
+        .article-body { padding-bottom: 2rem; }
+        .article-body h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; margin: 2rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+        .article-body h3 { font-size: 1.2rem; font-weight: 600; margin: 1.5rem 0 0.75rem; }
+        .article-body p { margin-bottom: 1.25rem; }
+        .article-body ul, .article-body ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .article-body li { margin-bottom: 0.5rem; }
+        .article-body blockquote { border-left: 3px solid var(--accent); padding: 0.75rem 1rem; background: var(--bg-secondary); margin-bottom: 1.25rem; font-style: italic; color: var(--text-secondary); }
+        .article-body .source-cite { font-size: 0.8rem; color: var(--text-muted); }
+        .article-body .source-cite a { color: var(--accent); }
+
+        /* FAQ */
+        .faq-section { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin: 2rem 0; }
+        .faq-section h2 { border: none; margin-top: 0; padding-top: 0; }
+        .faq-item { margin-bottom: 1.5rem; }
+        .faq-item:last-child { margin-bottom: 0; }
+        .faq-item h3 { font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--accent-dark); }
+        .faq-item p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        /* Share */
+        .share-bar { display: flex; gap: 0.75rem; margin: 2rem 0; padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); align-items: center; }
+        .share-bar span { font-size: 0.875rem; color: var(--text-muted); }
+        .share-btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; font-weight: 500; border: 1px solid var(--border); color: var(--text-secondary); background: #fff; cursor: pointer; transition: all 0.2s; }
+        .share-btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Related */
+        .related-posts { margin: 2rem 0; }
+        .related-posts h2 { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 1rem; border: none; padding: 0; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+        .related-card { border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; background: #fff; transition: border-color 0.2s; }
+        .related-card:hover { border-color: var(--accent); }
+        .related-card h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+        .related-card p { font-size: 0.8rem; color: var(--text-muted); }
+
+        /* Cross-links */
+        .cross-links { margin: 2rem 0; padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; }
+        .cross-links h3 { font-size: 0.95rem; margin-bottom: 0.75rem; color: var(--text-secondary); }
+        .cross-links-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .cross-links-list a { padding: 0.35rem 0.75rem; border: 1px solid var(--border); border-radius: 20px; font-size: 0.8rem; color: var(--text-secondary); background: #fff; }
+        .cross-links-list a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+        /* Disclaimer */
+        .disclaimer { margin: 2rem 0; padding: 1.25rem; background: #fefce8; border: 1px solid #fde68a; border-radius: 8px; font-size: 0.8rem; color: #92400e; line-height: 1.6; }
+
+        /* Footer */
+        .site-footer { border-top: 1px solid var(--border); padding: 2rem 0; margin-top: 2rem; text-align: center; }
+        .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+        .footer-links a { font-size: 0.8rem; color: var(--text-muted); }
+        .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+
+        @media (max-width: 640px) {
+            .article-header h1 { font-size: 1.75rem; }
+            .related-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container-wide">
+            <a href="https://calories.md/" class="site-logo">calories.md</a>
+            <nav class="site-nav">
+                <a href="https://calories.md/">Home</a>
+                <a href="https://calories.md/blog/">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="container">
+            <header class="article-header">
+                <h1>Do Smartwatches Overestimate the Calories You Burn During a Workout?</h1>
+                <div class="article-meta">
+                    <time datetime="2026-09-15">September 15, 2026</time>
+                    <span class="reading-time">6 min read</span>
+                    <span>By thrive.md Editorial Team</span>
+                </div>
+                    <div class="medical-reviewer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg><span>Medical advisor: Agustin Arrieta, MD &mdash; Otolaryngologist (ENT), South Florida</span></div>
+            </header>
+
+            <nav class="toc"><div class="toc-title">Table of Contents</div><ol><li><a href="#what-are-watches-tested-against">What do researchers compare smartwatch calories against?</a></li><li><a href="#do-watches-read-high-or-low">Do watches usually read high or low?</a></li><li><a href="#how-big-is-the-error-by-brand">How big is the error for Apple, Fitbit, and Garmin?</a></li><li><a href="#which-workouts-are-hardest">Which workouts produce the biggest errors?</a></li><li><a href="#why-heart-rate-estimates-miss">Why do heart-rate-based estimates miss?</a></li><li><a href="#should-you-eat-back-exercise-calories">Should you eat back the calories your watch reports?</a></li><li><a href="#the-bottom-line">The bottom line</a></li></ol></nav>
+
+            <div class="article-body">
+<p><strong>The short answer:</strong> Sometimes, but not always, and the error is large in both directions. Pooled research finds that wrist wearables read slightly low on average. Individual workouts can be far off: in a 2026 study, four smartwatches reported roughly double the calories actually burned during weight training. Treat the workout calorie number as a rough guess, not a measurement.</p>
+
+<h2 id="what-are-watches-tested-against">What do researchers compare smartwatch calories against?</h2>
+<p>A watch does not measure calories. It estimates them from motion, heart rate, and the profile you enter. Researchers check that estimate against a reference method that measures energy use more directly.</p>
+<ul>
+<li><strong>Indirect calorimetry:</strong> a mask or hood collects breath and measures oxygen used and carbon dioxide produced. This is the usual reference for a single workout in a lab.</li>
+<li><strong>Doubly labeled water:</strong> a person drinks water tagged with harmless isotopes, and urine samples over one to two weeks show total energy spent. This is the reference for free-living days.</li>
+</ul>
+<p>The standard error metric is the mean absolute percentage error, or MAPE. It shows how far off a device is on average, regardless of direction. A 10% MAPE is a common cutoff for calling a device valid.</p>
+
+<h2 id="do-watches-read-high-or-low">Do watches usually read high or low?</h2>
+<p>On average across many studies, slightly low. The <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11560992/">2024 living umbrella review in Sports Medicine</a> pulled together eight systematic reviews on energy expenditure, covering 218 studies and 7,734 participants. It reports that wearables mostly underestimated energy expenditure, with a mean bias of minus 3 kcal per minute, or minus 3%.</p>
+<p>That same review summarizes the <a href="https://pubmed.ncbi.nlm.nih.gov/30194221/">O'Driscoll meta-analysis in the British Journal of Sports Medicine</a>. It found a small underestimate overall, with errors in individual studies ranging from minus 21.27% to plus 14.76%. The original authors reported that accuracy depended on activity type and that heterogeneity between studies was large.</p>
+<p>Free-living data point the same way. In a <a href="https://pubmed.ncbi.nlm.nih.gov/31376273/">Japanese validation study using doubly labeled water</a>, 19 adults wore 12 devices for 15 days. Measured activity energy expenditure averaged 728.0 kcal per day. All devices except two Omron models significantly underestimated it.</p>
+<p>An average near zero does not mean a single reading is right. Large overestimates and large underestimates can cancel out in a pooled figure. For a single workout, the size of the error matters more than the average direction.</p>
+
+<h2 id="how-big-is-the-error-by-brand">How big is the error for Apple, Fitbit, and Garmin?</h2>
+<p>Large enough that no brand earns a clean result. A <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8817215/">2022 systematic review in the Journal of Medical Internet Research</a> covered 65 studies of wrist-worn trackers. For energy expenditure, the MAPE was above 30% for every brand. The spread within brands was wide:</p>
+<ul>
+<li><strong>Apple Watch:</strong> MAPE from 15% to 211% across studies.</li>
+<li><strong>Fitbit Charge HR:</strong> errors from minus 12% to 89%.</li>
+<li><strong>Garmin Forerunner 225:</strong> MAPE from 31% to 155%.</li>
+<li><strong>Polar V800:</strong> MAPE from 10% to 40%.</li>
+</ul>
+<p>A <a href="https://pubmed.ncbi.nlm.nih.gov/32897239/">2020 systematic review of 158 publications</a> reached the same verdict. It found Apple Watch and Garmin the most accurate for heart rate. For energy expenditure, it concluded that no brand was accurate. Older models dominate this research, and newer watches have not all been tested.</p>
+
+<h2 id="which-workouts-are-hardest">Which workouts produce the biggest errors?</h2>
+<p>Weight training and cycling do worse than walking or steady running. In a <a href="https://pubmed.ncbi.nlm.nih.gov/29189666/">2018 study in Medicine and Science in Sports and Exercise</a>, 50 adults did graded cycling and a resistance workout. Seven devices, including the Apple Watch Series 2 and two Fitbits, were compared with a metabolic analyzer. No device met the 10% MAPE cutoff for energy expenditure in either mode.</p>
+<p>A <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13120158/">2026 study in Sensors</a> tested Apple, Galaxy, Fitbit, and Garmin watches on 62 healthy men against indirect calorimetry. Heart rate tracked the ECG well. Calorie estimates did not. The mean values in the paper's tables were:</p>
+<ul>
+<li><strong>Endurance exercise:</strong> 203.75 kcal measured, against 221.50 to 265.87 kcal on the watches. That is about 9% to 30% high.</li>
+<li><strong>Resistance exercise:</strong> 140.79 kcal measured, against 299.10 kcal on the Apple Watch and 304.71 kcal on the Garmin. That is more than double.</li>
+<li><strong>Fitbit during resistance exercise:</strong> 145.95 kcal on average, close to measured, but with wide limits of agreement between individuals.</li>
+</ul>
+<p>One caution on this paper: its text labels the bias as underestimation, while its tables show watch readings above calorimetry. The table values are the ones reported here. Either way, the correlation with calorimetry during resistance exercise was weak, at r = 0.10 to 0.34.</p>
+
+<h2 id="why-heart-rate-estimates-miss">Why do heart-rate-based estimates miss?</h2>
+<p>Heart rate is only a proxy for oxygen use, and that link differs from person to person. A <a href="https://pubmed.ncbi.nlm.nih.gov/15966347/">2005 study in the Journal of Sports Sciences</a> tested 115 regular exercisers. It found that sex, heart rate, body weight, fitness (VO2max), and age best predicted the heart rate to energy relationship. With fitness included, the model explained 83.3% of the variance. Without a fitness measure, it explained 73.4%.</p>
+<p>Most watches do not know your true fitness level. They rely on age, sex, height, and weight, as the 2026 Sensors authors note. Two people with the same heart rate on the same bike can burn quite different amounts.</p>
+<p>Movement matters too. Wrist sensors see arm motion, which fits walking and running better than a leg press or a stationary bike. The O'Driscoll meta-analysis found that adding heart rate or heat sensing to accelerometry lowered error in most activity types. Better sensors help, but they do not close the gap.</p>
+
+<h2 id="should-you-eat-back-exercise-calories">Should you eat back the calories your watch reports?</h2>
+<p>Only with caution. Given errors of 30% or more, eating back the full number can erase a planned deficit. Watch figures often show gross calories, which include what you would burn at rest anyway. Our <a href="/blog/calories-burned-walking-10000-steps/">10,000 steps breakdown</a> explains the gross versus net gap.</p>
+<p>A simpler approach is to set intake from a maintenance estimate that already counts your usual activity. Our guide on <a href="/blog/how-to-calculate-tdee/">how to calculate TDEE</a> walks through it. Then adjust from your weight trend over several weeks. The wider accuracy picture for labels, menus, and trackers is in <a href="/blog/how-accurate-are-calorie-counts/">how accurate calorie counts are</a>.</p>
+<p>Wearables still have real value. Heart rate and step counts are far more reliable, and they help you track training load and consistency. For more on exercise and everyday health habits, see <a href="https://thrive.md/">thrive.md</a>.</p>
+
+<h2 id="the-bottom-line">The bottom line</h2>
+<p>Smartwatches do not reliably overestimate workout calories. They are unreliable in both directions. Pooled studies show a small average underestimate, and free-living tests against doubly labeled water mostly show readings that run low. Single sessions can be far off, and weight training is the worst case, where one 2026 study found readings about double the measured value. Use the heart rate data. Treat the calorie figure as a relative signal for comparing your own workouts, not a number to eat back.</p>
+<p><em>Last updated: September 2026. This article is for informational purposes only and does not constitute medical advice. Talk with a physician or registered dietitian before changing your intake based on exercise data, especially if you have diabetes, heart disease, or a history of disordered eating.</em></p>
+            </div>
+
+            <div class="faq-section"><h2>Frequently Asked Questions</h2><div class="faq-item"><h3>Is the Apple Watch more accurate for calories than Fitbit or Garmin?</h3><p>No brand has a clear lead for calories. A 2022 systematic review found errors above 30% for every brand, and the Apple Watch ranged from 15% to 211% across studies. Apple Watch does rank among the most accurate for heart rate.</p></div><div class="faq-item"><h3>Does a chest strap make calorie estimates accurate?</h3><p>A chest strap improves heart rate accuracy, but the calorie figure is still a model output. In a 2018 study, the Polar H7 strap was valid for heart rate, yet no device met the accuracy cutoff for energy expenditure. The strap does not know your fitness level or oxygen use.</p></div><div class="faq-item"><h3>Are calorie numbers on treadmills and bikes better than watches?</h3><p>They share the same problem. Machines estimate calories from speed, incline, or power plus the weight you enter, not from your oxygen use. Without accurate inputs, the figure can drift well away from what you burned.</p></div><div class="faq-item"><h3>Is my watch&#x27;s total daily calorie burn more reliable than its workout number?</h3><p>Not by much. In a 15-day study using doubly labeled water, most of 12 devices significantly underestimated daily activity energy expenditure. Use the daily figure as a trend to compare against yourself, not as a target to eat to.</p></div><div class="faq-item"><h3>Can entering my exact weight and age fix the error?</h3><p>Correct profile data helps, but it does not remove the error. Research on heart rate models shows fitness level also changes how heart rate relates to calories burned. Most watches cannot measure that directly.</p></div></div>
+
+            <div class="share-bar">
+                <span>Share:</span>
+                <a class="share-btn" href="https://twitter.com/intent/tweet?text=Do%20Smartwatches%20Overestimate%20the%20Calories%20You%20Burn%20During%20a%20Workout%3F&url=https://calories.md/blog/do-smartwatches-overestimate-calories-burned/" target="_blank" rel="noopener">&#120143; Twitter</a>
+                <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://calories.md/blog/do-smartwatches-overestimate-calories-burned/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+
+            <div class="cross-links">
+                <h3>Explore Related Health Topics</h3>
+                <div class="cross-links-list">
+                    <a href="https://thrive.md/">thrive.md</a><a href="https://glp1.md/">glp1.md</a><a href="https://ozempic.md/">ozempic.md</a><a href="https://mounjaro.md/">mounjaro.md</a><a href="https://hypertension.md/">hypertension.md</a>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Medical Disclaimer:</strong> This content is for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider with questions about a medical condition. Never disregard professional medical advice or delay seeking it because of something you read on this site. If you are in crisis, call 988 (Suicide &amp; Crisis Lifeline) or go to your nearest emergency room.
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container-wide">
+            <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
+                <a href="https://thrive.md">thrive.md</a>
+                <a href="https://anxiety.md">anxiety.md</a>
+                <a href="https://depression.md">depression.md</a>
+                <a href="https://ptsd.md">ptsd.md</a>
+                <a href="https://bipolar.md">bipolar.md</a>
+                <a href="https://ocd.md">ocd.md</a>
+                <a href="https://insomnia.md">insomnia.md</a>
+                <a href="https://ozempic.md">ozempic.md</a>
+                <a href="https://hypertension.md">hypertension.md</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 calories.md — Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
+        </div>
+    </footer>
+
+    <script>
+    // GA4 engagement tracking
+    let scrollMax = 0;
+    window.addEventListener('scroll', function() {
+        const pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        if (pct > scrollMax) {
+            scrollMax = pct;
+            if ([25, 50, 75, 100].includes(pct)) {
+                gtag('event', 'scroll_depth', { percent: pct, page: location.pathname });
+            }
+        }
+    });
+    // Time on page
+    const startTime = Date.now();
+    window.addEventListener('beforeunload', function() {
+        const seconds = Math.round((Date.now() - startTime) / 1000);
+        gtag('event', 'time_on_page', { seconds: seconds, page: location.pathname });
+    });
+    </script>
+</body>
+</html>
